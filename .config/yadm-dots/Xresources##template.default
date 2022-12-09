@@ -1,0 +1,37 @@
+! special
+*.foreground:   {{ env.COLOR_FG }}
+*.background:   {{ env.COLOR_BG}}
+*.cursorColor:  {{ env.COLOR_FG }}
+
+! black
+*.color0:       {{ env.BLACK }}
+*.color8:       {{ env.BLACK_HI }}
+
+! red
+*.color1:      {{ env.RED }}
+*.color9:      {{ env.RED_HI }}
+
+! green
+*.color2:       {{ env.GREEN }}
+*.color10:      {{ env.GREEN_HI }}
+
+! yellow
+*.color3:       {{ env.YELLOW }}
+*.color11:      {{ env.YELLOW_HI }}
+
+! blue
+*.color4:       {{ env.BLUE }}
+*.color12:      {{ env.BLUE_HI }}
+
+! magenta
+*.color5:       {{ env.PURPLE }}
+*.color13:      {{ env.PURPLE_HI }}
+
+! cyan
+*.color6:       {{ env.CYAN }}
+*.color14:      {{ env.CYAN_HI }}
+
+! white
+*.color7:       {{ env.WHITE }}
+*.color15:      {{ env.WHITE_HI }}
+
