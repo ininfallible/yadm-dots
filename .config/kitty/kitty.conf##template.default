@@ -1,0 +1,57 @@
+# YADM TEMPLATE
+
+# font
+font_family			Iosevka Medium
+bold_font			Iosevka Bold
+italic_font			Iosevka Medium Italic
+bold_italic_font 		Iosevka Bold Italic
+
+# margins (mosty aesthetic)
+window_margin_width 10.0
+single_window_margin_width -1
+
+# cursor
+cursor_shape underline
+cursor_blink_interval 1.5
+cursor_stop_blinking_after 10.0
+
+# misc
+enable_audio_bell no
+editor nvim
+
+# Colors - themed around rest of OS, cool and good
+# supposed to be a refined brown/gold theme 
+foreground:   {{ env.COLOR_FG }}
+background:   {{ env.COLOR_BG }}
+
+# black
+color0:       {{ env.BLACK }}
+color8:       {{ env.BLACK_HI }}
+
+# red
+color1:     	{{ env.RED }}
+color9:	{{ env.RED_HI }}
+
+# green
+color2:       {{ env.GREEN }}
+color10:      {{ env.GREEN_HI }}
+
+# yellow
+color3:       {{ env.YELLOW }}
+color11:      {{ env.YELLOW_HI }}
+
+# blue
+color4:       {{ env.BLUE }}
+color12:      {{ env.BLUE_HI }}
+
+# magenta
+color5:       {{ env.PURPLE }}
+color13:      {{ env.PURPLE_HI }}
+
+# cyan
+color6:       {{ env.CYAN }}
+color14:      {{ env.CYAN_HI }}
+
+# white
+color7:       {{ env.WHITE }}
+color15:      {{ env.WHITE_HI }}
