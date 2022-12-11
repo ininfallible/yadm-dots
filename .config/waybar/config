@@ -5,10 +5,10 @@
     // "width": 1280, // Waybar width
     "spacing": 4, // Gaps between modules (4px)
     // Choose the order of the modules
-    "modules-left": ["sway/workspaces", "sway/mode", "sway/scratchpad", "custom/media"],
+    "modules-left": ["sway/workspaces", "sway/mode", "sway/scratchpad"],
     // "modules-center": ["sway/window"],
     "modules-center": ["clock"],
-    "modules-right": ["keyboard-state", "idle_inhibitor", "pulseaudio", "cpu", "memory", "temperature", "sway/language", "network", "tray"],
+    "modules-right": ["custom/media", "keyboard-state", "idle_inhibitor", "pulseaudio", "cpu", "memory", "temperature", "sway/language", "network", "tray"],
     // Modules configuration
     // "sway/workspaces": {
     //     "disable-scroll": true,
@@ -163,5 +163,5 @@
         "escape": true,
         "exec": "$HOME/.config/waybar/mediaplayer.py 2> /dev/null" // Script in resources folder
         // "exec": "$HOME/.config/waybar/mediaplayer.py --player spotify 2> /dev/null" // Filter player based on name
-    }
+    },
 }
