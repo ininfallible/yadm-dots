@@ -161,16 +161,17 @@ label:focus {
 #wireplumber.muted { }
 
 #custom-media {
-    background-color: alpha(#{{ env.GREEN }}, 0.2);
+    background-color: alpha(#{{ env.BLUE }}, 0.2);
     min-width: 100px;
 }
 
 #custom-media.custom-spotify {
+    background-color: alpha(#{{ env.GREEN }}, 0.2);
     background-color: #66cc99;
 }
 
 #custom-media.custom-vlc {
-    background-color: #ffa000;
+    background-color: alpha(#{{ env.YELLOW }}, 0.2);
 }
 
 #temperature {
