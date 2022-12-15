@@ -292,8 +292,8 @@ bindsym XF86AudioLowerVolume exec "pactl set-sink-volume @DEFAULT_SINK@ -1000"
 
 bindsym XF86AudioMute exec "pactl set-sink-mute @DEFAULT_SINK toggle"
 # Take screenshot of area of screen
-bindsym Shift+$mod+s exec grim -g "$(slurp)" $HOME/Pictures/screenshot.png | wl-copy
+bindsym Shift+$mod+s exec grim -g "$(slurp -d)" - | tee $HOME/Pictures/screenshot.png >(wl-copy)
 # Take screenshot of entire screen
-bindsym Control+$mod+s exec grim $HOME/Pictures/screenshot.png | wl-copy
+bindsym Control+$mod+s exec grim | tee $HOME/Pictures/screenshot.png >(wl-copy)
 
 include /etc/sway/config.d/*

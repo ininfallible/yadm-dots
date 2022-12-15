@@ -127,6 +127,12 @@ alias rm='echo "rm is disabled, use remove or trash or /bin/rm instead."'
 # Enable vim bindings
 bindkey -v
 
+# Rocm path (broken)
+export PATH=$PATH:/opt/rocm/bin:/opt/rocm/opencl/bin:/rocm/hip/bin/
+
+# mybin path
+export PATH=$PATH:$HOME/mybin/
+
 # zsh-vim-mode cursor settings
 MODE_CURSOR_VIINS="#add87d blinking bar"
 MODE_CURSOR_REPLACE="$MODE_CURSOR_VIINS #eb7064"
@@ -136,7 +142,7 @@ MODE_CURSOR_VISUAL="$MODE_CURSOR_VICMD steady bar"
 MODE_CURSOR_VLINE="$MODE_CURSOR_VISUAL #8ee1d2"
 
 # zsh-vim-mode mode display
-MODE_INDICATOR_VIINS='%F{15}[%F{8}INSERT]%f'
+MODE_INDICATOR_VIINS='%F{15}[INSERT]%f'
 MODE_INDICATOR_VICMD='%F{10}[%F{10}NORMAL]%f'
 MODE_INDICATOR_REPLACE='%F{9}[%F{1}REPLACE]%f'
 MODE_INDICATOR_SEARCH='%F{13}[%F{5}SEARCH]%f'

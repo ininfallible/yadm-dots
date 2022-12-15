@@ -230,8 +230,8 @@ label:focus {
 }
 
 #keyboard-state {
-    background: #97e1ad;
-    color: #000000;
+    background: transparent;
+    color: @theme_fg_color;
     padding: 0 0px;
     margin: 0 5px;
     min-width: 16px;
