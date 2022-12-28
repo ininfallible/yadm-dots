@@ -73,15 +73,6 @@ packer.startup(function(use)
 	})
 	use({ 'nvim-telescope/telescope-fzf-native.nvim', run = 'make' })
 
-	-- -- Set colorscheme
-	-- use({ 'mjlbach/onedark.nvim', -- Theme inspired by Atom
-	-- config = function ()
-	-- 	vim.o.termguicolors = true
-	-- 	vim.cmd [[colorscheme onedark]]
-	-- end,
-	-- })
-
-
 	-- Add indentation guides even on blank lines
 	use('lukas-reineke/indent-blankline.nvim')
 
@@ -116,10 +107,21 @@ packer.startup(function(use)
 	})
 
 	-- file explorer
-	use({
-		'ms-jpq/chadtree',
-		config = get_config("chadtree")
-	})
+	-- 12/27/2022: chadtree is broken for unknown reasons, switching to neotree
+	-- 	use({
+	-- 		'ms-jpq/chadtree',
+	-- 		config = get_config("chadtree")
+	-- 	})
+	use {
+		"nvim-neo-tree/neo-tree.nvim",
+		branch = "v2.x",
+		requires = { 
+			"nvim-lua/plenary.nvim",
+			"nvim-tree/nvim-web-devicons", -- not strictly required, but recommended
+			"MunifTanjim/nui.nvim",
+		},
+		config = get_config("neo-tree"),
+	}
 
 	-- focus mode
 	use({'junegunn/goyo.vim'})
@@ -128,6 +130,6 @@ packer.startup(function(use)
 	use({
 		'renerocksai/telekasten.nvim',
 		requires = {'renerocksai/calendar-vim'},
-		config = get_config("telekasten");
+		config = get_config("telekasten"),
 	})
 end)
