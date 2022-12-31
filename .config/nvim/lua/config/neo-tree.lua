@@ -1,2 +1,5 @@
--- :map <C-n> :CHADTreeOpen<CR>
-vim.keymap.set('', '<C-n>', ':Neotree show<CR>', {noremap = true, silent = true})
+require("neo-tree").setup({
+	popup_border_style = "rounded",
+})
+
+vim.keymap.set('', '<C-n>', ':Neotree toggle reveal_force_cwd<CR>', {noremap = true, silent = true})

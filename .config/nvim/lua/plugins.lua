@@ -73,6 +73,7 @@ packer.startup(function(use)
 	})
 	use({ 'nvim-telescope/telescope-fzf-native.nvim', run = 'make' })
 
+
 	-- Add indentation guides even on blank lines
 	use('lukas-reineke/indent-blankline.nvim')
 
