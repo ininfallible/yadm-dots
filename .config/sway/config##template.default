@@ -211,7 +211,7 @@ bindsym $mod+r mode "resize"
 #
 # Power controls
 #
-set $Locker swaylock \
+set $Locker swaylock -f \
 	--line-color ffffff00 --line-clear-color ffffff00 --line-ver-color ffffff00  --line-wrong-color ffffff00 \
 	--separator-color ffffff00 \
 	--indicator-radius 80 \
