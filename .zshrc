@@ -127,11 +127,18 @@ alias rm='echo "rm is disabled, use remove or trash or /bin/rm instead."'
 # Enable vim bindings
 bindkey -v
 
-# Rocm path (broken)
+# ROCm path (it works!!!)
 export PATH=$PATH:/opt/rocm/bin:/opt/rocm/opencl/bin:/rocm/hip/bin/
+# https://rocmsoftwareplatform.github.io/MIOpen/doc/html/DebugAndLogging.html
+export MIOPEN_ENABLE_LOGGING=0
+export MIOPEN_ENABLE_LOGGING_CMD=0
+export MIOPEN_LOG_LEVEL=1
+# Tell ROCm we're a 6800xt which is supported
+export HSA_OVERRIDE_GFX_VERSION=10.3.0
 
 # mybin path
 export PATH=$PATH:$HOME/mybin/
+
 
 # zsh-vim-mode cursor settings
 MODE_CURSOR_VIINS="#add87d blinking bar"
