@@ -59,3 +59,28 @@ vim.api.nvim_set_hl(0, 'HorizSplit' , {ctermbg = 240})
 -- set text width to 80 chars
 vim.o.textwidth = 80
 
+-- 
+vim.opt.relativenumber = true
+vim.api.nvim_create_augroup("NumberToggle", {})
+vim.api.nvim_create_autocmd(
+	{"BufEnter","FocusGained","InsertLeave","WinEnter"},
+	{
+		group = "NumberToggle",
+		callback = function(_)
+			if vim.opt.number and vim.api.nvim_get_mode()["mode"] ~= "i" then
+				vim.opt.relativenumber = true
+			end
+		end
+	}
+)
+vim.api.nvim_create_autocmd(
+	{"BufLeave","FocusLost","InsertEnter","WinLeave"},
+	{
+		group = "NumberToggle",
+		callback = function(_)
+			if vim.opt.number then
+				vim.opt.relativenumber = false
+			end
+		end
+	}
+)

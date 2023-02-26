@@ -113,6 +113,7 @@ packer.startup(function(use)
 	-- 		'ms-jpq/chadtree',
 	-- 		config = get_config("chadtree")
 	-- 	})
+	--
 	use {
 		"nvim-neo-tree/neo-tree.nvim",
 		branch = "v2.x",
@@ -125,7 +126,10 @@ packer.startup(function(use)
 	}
 
 	-- focus mode
-	use({'junegunn/goyo.vim'})
+	use {
+		"folke/zen-mode.nvim",
+		config = get_config("zen-mode")
+	}
 
 	-- zettelkasten plugin
 	use({
