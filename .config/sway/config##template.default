@@ -81,7 +81,7 @@ input type:pointer {
     bindsym $mod+Shift+q kill
 
     # Start your launcher
-	bindsym $mod+d exec "dmenu_run -nb '#{{ env.COLOR_BG }}' -sf '#{{ env.COLOR_BG }}' -nf '#{{ env.YELLOW_HI }}' -sb '#{{ env.YELLOW }}' -fn 'Iosevka-16:Medium'"
+	bindsym $mod+d exec "dmenu_run -nb '#{{ env.COLOR_BG }}' -sf '#{{ env.COLOR_BG }}' -nf '#{{ env.COLOR_ACCENT_HI }}' -sb '#{{ env.COLOR_ACCENT_HI }}' -fn 'Iosevka-16:Medium'"
 
     # Drag floating windows by holding down $mod and left mouse button.
     # Resize them with right mouse button + $mod.
@@ -238,11 +238,11 @@ bindsym $mod+grave mode "$mode_system"
 #
 # colors
 # class                 border  				backgr. 			text    				indicator 			child_border
-client.focused          #{{ env.YELLOW }}		#{{ env.YELLOW }} 	#{{ env.BLACK }}		#{{ env.YELLOW }} 	#{{ env.YELLOW }}
-client.focused_inactive #{{ env.BLACK }}	 	#{{ env.BLACK }} 	#{{ env.YELLOW }}		#{{ env.BLACK_HI }} #{{ env.BLACK }}
-client.unfocused 		#{{ env.BLACK }} 		#{{ env.BLACK }}	#{{ env.YELLOW }}		#{{ env.BLACK }} 	#{{ env.BLACK }}
-client.urgent 			#{{ env.RED }} 			#{{ env.RED_HI }} 	#{{ env.BLACK }}		#{{ env.RED }} 		#{{ env.RED_HI }}
-client.placeholder 		#{{ env.GREEN }} 		#{{ env.GREEN }} 	#{{ env.BLACK }}		#{{ env.BLACK }} 	#{{ env.GREEN }}
+client.focused          #{{ env.COLOR_ACCENT_HI }}		#{{ env.COLOR_ACCENT_HI }} 	#{{ env.COLOR_BG }}		#{{ env.COLOR_ACCENT_HI }} 	#{{ env.COLOR_ACCENT_HI }}
+client.focused_inactive #{{ env.COLOR_BG }}	 	#{{ env.COLOR_BG }} 	#{{ env.COLOR_ACCENT }}		#{{ env.BLACK }} #{{ env.COLOR_BG }}
+client.unfocused 		#{{ env.COLOR_BG }} 		#{{ env.COLOR_BG }}	#{{ env.COLOR_ACCENT }}		#{{ env.COLOR_BG }} 	#{{ env.COLOR_BG }}
+client.urgent 			#{{ env.RED }} 			#{{ env.RED_HI }} 	#{{ env.COLOR_BG }}		#{{ env.RED }} 		#{{ env.RED_HI }}
+client.placeholder 		#{{ env.GREEN }} 		#{{ env.GREEN }} 	#{{ env.COLOR_BG }}		#{{ env.COLOR_BG }} 	#{{ env.GREEN }}
 
 client.background 		#ffffff
 gaps inner 8 

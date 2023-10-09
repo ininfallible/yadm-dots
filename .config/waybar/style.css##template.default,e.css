@@ -99,7 +99,7 @@ button:hover {
 
 #clock {
 	font-weight: bold;
-	color: #{{ env.YELLOW }};
+	color: #{{ env.COLOR_ACCENT_HI }};
     background-color: transparent;
 }
 
@@ -142,11 +142,11 @@ label:focus {
 #disk { }
 
 #backlight {
-    background-color: alpha(#{{env.YELLOW}}, 0.3);
+    background-color: alpha(#{{env.COLOR_ACCENT}}, 0.3);
 }
 
 #network { 
-    background-color: alpha(#{{env.YELLOW}}, 0.3);
+    background-color: alpha(#{{env.COLOR_ACCENT}}, 0.3);
 }
 
 #network.disconnected {
@@ -223,7 +223,7 @@ label:focus {
 */
 
 #language {
-    background-color: alpha(#{{env.YELLOW}}, 0.3);
+    background-color: alpha(#{{env.COLOR_ACCENT_HI}}, 0.3);
     padding: 0 5px;
     margin: 0 5px;
     min-width: 16px;
