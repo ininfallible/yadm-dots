@@ -138,6 +138,7 @@ export HSA_OVERRIDE_GFX_VERSION=10.3.0
 
 # mybin path
 export PATH=$PATH:$HOME/mybin/
+export PATH=$PATH:$HOME/.local/bin/
 
 
 # zsh-vim-mode cursor settings
@@ -162,6 +163,7 @@ KEYTIMEOUT=1
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
 
+export CRYPTOGRAPHY_OPENSSL_NO_LEGACY=1
 __conda_setup="$('/opt/miniconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
 if [ $? -eq 0 ]; then
     eval "$__conda_setup"
