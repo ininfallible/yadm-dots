@@ -109,6 +109,7 @@ fi
 # For a full list of active aliases, run `alias`.
 # # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+alias hx='helix'
 alias egrep='egrep --color=auto'
 alias fgrep='fgrep --color=auto'
 alias grep='grep --color=auto'

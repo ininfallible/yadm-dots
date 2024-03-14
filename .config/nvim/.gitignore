@@ -1,3 +1,7 @@
+tags
+.luarc.json
+nvim
 plugin/
 undodir/
 .netrwhist
+modular-old/
