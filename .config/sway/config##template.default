@@ -296,4 +296,7 @@ bindsym Shift+$mod+s exec grim -g "$(slurp -d)" - | tee $HOME/Pictures/screensho
 # Take screenshot of entire screen
 bindsym Control+$mod+s exec grim | tee $HOME/Pictures/screenshot.png >(wl-copy)
 
+# set $opacity 0.9
+# for_window [app_id=".*"] opacity $opacity
+
 include /etc/sway/config.d/*

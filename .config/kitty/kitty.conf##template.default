@@ -8,7 +8,7 @@ bold_italic_font 	Iosevka Bold Italic
 font_size			12.0
 
 # margins (mosty aesthetic)
-window_margin_width 10.0
+# window_margin_width 10.0
 single_window_margin_width -1
 
 # cursor
@@ -54,3 +54,5 @@ color14		#{{ env.CYAN_HI }}
 # white
 color7		#{{ env.WHITE }}
 color15		#{{ env.WHITE_HI }}
+
+background_opacity 0.97

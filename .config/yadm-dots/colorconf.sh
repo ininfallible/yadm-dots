@@ -3,8 +3,8 @@
 # Exports env variables so yadm can fill them into dotfiles with ##template.default
 # TO USE: run `source colorconf.sh`, then `yadm alt`
 
-export COLOR_FG=c1beae
-export COLOR_BG=3a4046
+export COLOR_FG=afbdc6
+export COLOR_BG=30353b
 export COLOR_ACCENT=c49fb8
 export COLOR_ACCENT_HI=f0a8b8
 
@@ -23,7 +23,7 @@ export YELLOW=c99643
 export YELLOW_HI=f0cc74
 # Blue		(4, 12)
 export BLUE=7281c8
-export BLUE_HI=aab9d5
+export BLUE_HI=9bb1db
 # Purple	(5, 13)
 export PURPLE=9463a5
 export PURPLE_HI=b294bb
