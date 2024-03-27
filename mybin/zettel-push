@@ -1,4 +1,4 @@
 #!/bin/zsh
 
-# pushes (syncs) local notes to gdrive)
-rclone sync ~/zettelkasten astr-gdrive:/zettelkasten --progress
+# push (sync) local zettelkasten to gdrive
+rclone sync ~/zettelkasten/ astr-gdrive:/zettelkasten/ -P

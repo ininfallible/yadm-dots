@@ -18,9 +18,9 @@ set $term kitty
 # Your preferred application launcher
 # Note: pass the final command to swaymsg so that the resulting window can be opened
 # on the original workspace that the command was run on.
-set $menu dmenu_path | dmenu | xargs swaymsg exec --
+set $menu tofi-run | xargs swaymsg exec --
 
-set $bg /home/astr/.config/yadm-dots/wallpaper_NoriZC.jpg
+set $bg /home/astr/.config/yadm-dots/wallpaper_noyk.jpg
 
 ### Output configuration
 #
@@ -81,7 +81,7 @@ input type:pointer {
     bindsym $mod+Shift+q kill
 
     # Start your launcher
-	bindsym $mod+d exec "dmenu_run -nb '#{{ env.COLOR_BG }}' -sf '#{{ env.COLOR_BG }}' -nf '#{{ env.COLOR_ACCENT_HI }}' -sb '#{{ env.COLOR_ACCENT_HI }}' -fn 'Iosevka-16:Medium'"
+	bindsym $mod+d exec $menu
 
     # Drag floating windows by holding down $mod and left mouse button.
     # Resize them with right mouse button + $mod.

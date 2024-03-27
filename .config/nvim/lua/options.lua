@@ -33,7 +33,7 @@ vim.o.updatetime = 250
 vim.wo.signcolumn = 'yes'
 
 --Set colorscheme
--- vim.o.termguicolors = false
+vim.o.termguicolors = false
 
 -- Set completeopt to have a better completion experience
 vim.o.completeopt = 'menuone,noselect'
@@ -47,11 +47,10 @@ vim.api.nvim_set_hl(0, 'tkHighlight' , {ctermbg = "Yellow", ctermfg = "Black", b
 vim.api.nvim_set_hl(0, 'tkTag' , {ctermfg = "LightGreen", underline = true})
 vim.api.nvim_set_hl(0, 'CalNavi', {link = 'CalRuler'})
 
--- Solid split dividers
 vim.o.fillchars = 'vert: ,horiz: ,eob: '
+vim.api.nvim_set_hl(0, 'LineNr' , {ctermfg = 238})
 vim.api.nvim_set_hl(0, 'VertSplit' , {ctermbg = 238})
 vim.api.nvim_set_hl(0, 'HorizSplit' , {ctermbg = 238})
--- vim.api.nvim_set_hl(0, 'LineNr' , {ctermfg = 179})
 vim.api.nvim_set_hl(0, 'TabLineFill' , {ctermbg = 238})
 vim.api.nvim_set_hl(0, 'TabLine' , {ctermbg = 238, ctermfg = "Gray"})
 vim.api.nvim_set_hl(0, 'TabLineSel' , {ctermbg = "NONE", ctermfg = "Yellow", bold = true})

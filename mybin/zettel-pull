@@ -1,4 +1,4 @@
 #!/bin/zsh
 
-# pulls local notes from gdrive
-rclone copy astr-gdrive:/zettelkasten ~/zettelkasten --progress
+# pull gdrive to local
+rclone copy astr-gdrive:/zettelkasten/ ~/zettelkasten/ -P

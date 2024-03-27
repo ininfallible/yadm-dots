@@ -10,7 +10,7 @@
 
 ! red
 *.color1:     	#{{ env.RED }}
-*.color9:		#{{ env.RED_HI }}
+*.color9:				#{{ env.RED_HI }}
 
 ! green
 *.color2:       #{{ env.GREEN }}

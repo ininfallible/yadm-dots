@@ -141,6 +141,8 @@ export HSA_OVERRIDE_GFX_VERSION=10.3.0
 export PATH=$PATH:$HOME/mybin/
 export PATH=$PATH:$HOME/.local/bin/
 
+# export GDK_BACKEND=x11
+
 
 # zsh-vim-mode cursor settings
 MODE_CURSOR_VIINS="#add87d blinking bar"
@@ -160,6 +162,7 @@ MODE_INDICATOR_VLINE='%F{12}[%F{4}V-LINE]%f'
 
 # greatly reduce key timeout (for entering normal mode on vim)
 KEYTIMEOUT=1
+
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
