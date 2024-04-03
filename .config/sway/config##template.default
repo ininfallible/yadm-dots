@@ -284,13 +284,19 @@ bar {
 #
 # Useful Keyboard Shortcuts
 #
+
+# Increase backlight
+bindsym XF86MonBrightnessUp exec "xbacklight -inc 5"
+# Decrease backlight
+bindsym XF86MonBrightnessDown exec "xbacklight -dec 5"
+
 # Increase volume
 bindsym XF86AudioRaiseVolume exec "pactl set-sink-volume @DEFAULT_SINK@ +1000"
 # Decrease volume
 bindsym XF86AudioLowerVolume exec "pactl set-sink-volume @DEFAULT_SINK@ -1000"
 # Mute volume
-
 bindsym XF86AudioMute exec "pactl set-sink-mute @DEFAULT_SINK toggle"
+
 # Take screenshot of area of screen
 bindsym Shift+$mod+s exec grim -g "$(slurp -d)" - | tee $HOME/Pictures/screenshot.png >(wl-copy)
 # Take screenshot of entire screen
