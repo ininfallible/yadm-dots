@@ -102,13 +102,14 @@
 	# alternate-result-background-corner-radius = 0
 
 	# Selection text
-	selection-color = #{{ env.ACCENT }}
+	selection-color = #{{ env.COLOR_ACCENT_HI }}
 	selection-background = #00000000
 	selection-background-padding = 0
 	selection-background-corner-radius = 0
 
 	# Matching portion of selection text
-	selection-match-color = #00000000
+	selection-match-color = #{{ env.COLOR_ACCENT_HI }}
+	# selection-match-color = #00000000
 
 
 #

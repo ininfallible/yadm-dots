@@ -20,7 +20,7 @@ set $term kitty
 # on the original workspace that the command was run on.
 set $menu tofi-run | xargs swaymsg exec --
 
-set $bg /home/astr/.config/yadm-dots/wallpaper_noyk.jpg
+set $bg /home/astr/.config/yadm-dots/wallpaper_NoriZC.jpg
 
 ### Output configuration
 #
